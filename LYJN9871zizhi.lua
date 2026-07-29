@@ -341,11 +341,12 @@ MainTab:Button({
     Desc = "",
     Locked = false,
     Callback = function()
-    local args = {
+     local args = {
     [1] = "repairReplenishItem",
     [2] = "MT First Aid Kit"
 }
 game:GetService("ReplicatedStorage").Remote.PlayerFunc:InvokeServer(unpack(args))
+
     end
 })
 
@@ -359,4 +360,6 @@ MainTab:Button({
     [2] = "MT Bandage"
 }
 game:GetService("ReplicatedStorage").Remote.PlayerFunc:InvokeServer(unpack(args))
+
+    end
 })
